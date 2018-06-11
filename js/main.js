@@ -14,6 +14,9 @@ function getGifs(){
 		{
 		$('.inner').append("<img src='"+gifs[i].images.original.url+"'/>")
 		}
+
+	var input = document.getElementById("searchtext").value = ""
+
 	});
 
 }
@@ -21,7 +24,7 @@ function getGifs(){
 
 function getRandomGifs(){
 
-	var input = $("#searchtext").val()
+	$('.inner').empty();
 
 	var xhr = $.get("http://api.giphy.com/v1/gifs/random?&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw");
 
@@ -34,3 +37,4 @@ function getRandomGifs(){
 	});
 
 }
+
