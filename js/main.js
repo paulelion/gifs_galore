@@ -38,3 +38,10 @@ function getRandomGifs(){
 
 }
 
+
+function resetGifs(){
+	$('.inner').empty();
+	$('#searchtext').empty();
+}
+
+

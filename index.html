@@ -13,7 +13,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 	<link rel="icon" href="favicon.ico" rel="shortcut icon">
 </head>
 
@@ -31,8 +32,15 @@
         	<div class="input-group">
 				<input type="text" class="form-control input-md" id="searchtext" placeholder="Search for.." />
 				<span class="input-group-btn">
-					<button type="submit" class="btn btn-primary btn-md" id="searchgifs" onclick="getGifs()">Search</button>
- 					<button type="submit" class="btn btn-primary btn-md" id="randomgifs" onclick="getRandomGifs()">Random</button>
+					<button type="submit" class="btn btn-primary btn-md" id="searchgifs" onclick="getGifs()">
+						<i class="fas fa-search"></i>
+					</button>
+ 					<button type="submit" class="btn btn-primary btn-md" id="randomgifs" onclick="getRandomGifs()">
+ 						<i class="fas fa-random"></i>
+ 					</button>
+ 					<button type="submit" class="btn btn-primary btn-md" id="resetgifs" onclick="resetGifs()">
+ 						<i class="fas fa-skull"></i>
+ 					</button>
 				</span>
  			</div>
  		</div>
