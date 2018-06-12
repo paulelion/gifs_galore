@@ -100,9 +100,8 @@ textarea {
 .inner img {
     width: 300px !important;
     height: auto;
+    padding: 1px;
 }
-
-
 
 
 
