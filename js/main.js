@@ -45,3 +45,19 @@ function resetGifs(){
 }
 
 
+$(document).on('keydown keyup', function(e) {
+    if (e.type == 'keydown') { 
+        
+        
+
+        // a - punch
+        if (e.keyCode == 13 ) 
+        { 
+            getGifs(); 
+        }
+    }
+
+    console.log(e.keyCode);
+
+    //return false;
+});
