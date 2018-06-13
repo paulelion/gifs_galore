@@ -22,6 +22,7 @@ function getGifs(){
 }
 
 
+
 function getRandomGifs(){
 
 	$('.inner').empty();
@@ -39,25 +40,21 @@ function getRandomGifs(){
 }
 
 
+
 function resetGifs(){
 	$('.inner').empty();
 	$('#searchtext').empty();
 }
 
 
-$(document).on('keydown keyup', function(e) {
-    if (e.type == 'keydown') { 
-        
-        
 
-        // a - punch
-        if (e.keyCode == 13 ) 
-        { 
+$(document).on('keydown keyup', function(e) {
+    if (e.type == 'keydown') {   
+        if (e.keyCode == 13) { 
             getGifs(); 
         }
     }
 
     console.log(e.keyCode);
 
-    //return false;
 });

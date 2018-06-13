@@ -24,35 +24,36 @@
 	<![endif]-->
 
 	<!-- Add your site or application content here -->
-	<div class="container">
+
+ 	<div class="container">
 		<div class="row">
-			<h2>Gifs Galore</h2>
+	        <div class="col-md-6">
+	    		<h2>Gifs Galore 2</h2>
+	            <div id="custom-search-input">
+	                <div class="input-group col-md-12">
+	                    <input type="text" class="form-control input-lg" id="searchtext" placeholder="Search for.." />
+	                    <span class="input-group-btn">
+	                        <button class="btn btn-info btn-lg" type="submit" id="searchgifs" onclick="getGifs()">
+	                            <i class="fas fa-search"></i>
+	                        </button>
+	                        <button class="btn btn-info btn-lg" type="submit" id="randomgifs" onclick="getRandomGifs()">
+	                            <i class="fas fa-random"></i>
+	                        </button>
+	                        <button class="btn btn-info btn-lg" type="submit" id="resetgifs" onclick="resetGifs()">
+	                            <i class="fas fa-trash-alt"></i>
+	                        </button>
+	                    </span>
+	                </div>
+	            </div>
+	        </div>
+	    	<div class="col-md-12">
+ 				<div class="inner"></div>
+	        </div>
 		</div>
-		<div class="row">
-        	<div class="input-group">
-				<input type="text" class="form-control input-md" id="searchtext" placeholder="Search for.." />
-				<span class="input-group-btn">
-					<button type="submit" class="btn btn-primary btn-md" id="searchgifs" onclick="getGifs()">
-						<i class="fas fa-search"></i>
-					</button>
- 					<button type="submit" class="btn btn-primary btn-md" id="randomgifs" onclick="getRandomGifs()">
- 						<i class="fas fa-random"></i>
- 					</button>
- 					<button type="submit" class="btn btn-primary btn-md" id="resetgifs" onclick="resetGifs()">
- 						<i class="fas fa-skull"></i>
- 					</button>
-				</span>
- 			</div>
- 		</div>
- 		<div class="row">
- 			<div class="inner"></div>
- 		</div>
- 	</div>
+	</div>
 
-
-
- 	
 <!--
+
 		<h1>Gifs Galore</h1>
 		<input id="searchtext" type="text" placeholder="Search for..">
 		<button id="searchgifs" type="submit" onclick="getGifs()">Search Gifs</button>
