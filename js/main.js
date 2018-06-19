@@ -1,9 +1,10 @@
+// Search Button
 
 function getGifs(){
 
 	var input = $("#searchtext").val()
 
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw&limit=16");
+	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw&limit=4");
 
 	xhr.done(function(response) { 
 		console.log("success got data", response);
@@ -22,10 +23,9 @@ function getGifs(){
 }
 
 
+// Random Button
 
 function getRandomGifs(){
-
-	$('.inner').empty();
 
 	var xhr = $.get("http://api.giphy.com/v1/gifs/random?&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw");
 
@@ -33,20 +33,20 @@ function getRandomGifs(){
 		console.log("success got data", response);
 
 		var gifs = response.data
-		$('.inner').append("<img src='"+gifs.image_url+"'/>")
+		$('.inner').prepend("<img src='"+gifs.image_url+"'/>")
 	
 	});
 
 }
 
-
+// Reset Button
 
 function resetGifs(){
 	$('.inner').empty();
 	$('#searchtext').empty();
 }
 
-
+// Enter - keyboard
 
 $(document).on('keydown keyup', function(e) {
     if (e.type == 'keydown') {   
@@ -58,3 +58,9 @@ $(document).on('keydown keyup', function(e) {
     console.log(e.keyCode);
 
 });
+
+
+
+
+
+

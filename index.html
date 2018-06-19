@@ -27,39 +27,44 @@
 
  	<div class="container">
 		<div class="row">
-	        <div class="col-md-6">
-	    		<h2>Gifs Galore 2</h2>
+	        <div class="col-md-12">
+	    		<h1 class="title">Gifs Galore</h1>
+	    	</div>
+	    </div>
+	    <br>
+	    <div class="row">
+	    	<div class="col-md-8 offset-md-2">
 	            <div id="custom-search-input">
 	                <div class="input-group col-md-12">
 	                    <input type="text" class="form-control input-lg" id="searchtext" placeholder="Search for.." />
 	                    <span class="input-group-btn">
-	                        <button class="btn btn-info btn-lg" type="submit" id="searchgifs" onclick="getGifs()">
+	                        <button class="btn btn-info btn-lg" type="submit" id="searchgifs" title="Search" onclick="getGifs()">
 	                            <i class="fas fa-search"></i>
 	                        </button>
-	                        <button class="btn btn-info btn-lg" type="submit" id="randomgifs" onclick="getRandomGifs()">
+	                        <button class="btn btn-info btn-lg" type="submit" id="randomgifs" title="Randomize" onclick="getRandomGifs()">
 	                            <i class="fas fa-random"></i>
 	                        </button>
-	                        <button class="btn btn-info btn-lg" type="submit" id="resetgifs" onclick="resetGifs()">
+	                        <button class="btn btn-info btn-lg" type="submit" id="resetgifs" title="Clear" onclick="resetGifs()">
 	                            <i class="fas fa-trash-alt"></i>
 	                        </button>
 	                    </span>
 	                </div>
 	            </div>
 	        </div>
-	    	<div class="col-md-12">
+	    </div>
+
+	    <br>
+	    <br>
+	    <br>	
+
+	    <div class="row images">
+	    	<div class="col-md-12 grid">
  				<div class="inner"></div>
 	        </div>
 		</div>
 	</div>
 
-<!--
-
-		<h1>Gifs Galore</h1>
-		<input id="searchtext" type="text" placeholder="Search for..">
-		<button id="searchgifs" type="submit" onclick="getGifs()">Search Gifs</button>
-		<button id="randomgifs" type="submit" onclick="getRandomGifs()">Random</button>
-		<div class="inner"></div>
--->	
+	<br>
 
 	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
