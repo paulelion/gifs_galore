@@ -150,12 +150,11 @@ body {
     padding: 3px;
     border: solid 1px #FFFFE0;
     border-radius: 6px;
-    background-color: #fff;
     border-color: rgb(255, 255, 0, 0.8);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 0, 0.6);
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.005) inset, 0 0 8px rgba(255, 255, 0, 0.6);
     outline: 0 none;
 }
-
 
 #custom-search-input input{
     border: 0;
