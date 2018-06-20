@@ -105,6 +105,10 @@ textarea {
 body {
     padding-top: 45px;
     background-color: black !important;
+
+    background-image: url("../img/giphy.gif");
+    background-position: right top;
+    background-repeat: no-repeat;
 }
 
 /* Header */
