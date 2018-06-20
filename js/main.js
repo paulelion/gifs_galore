@@ -4,7 +4,7 @@ function getGifs(){
 
 	var input = $("#searchtext").val()
 
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw&limit=4");
+	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"&api_key=7aFQfk9FpPpZjgmPUyJ0PLb79Cej5iNw&limit=6");
 
 	xhr.done(function(response) { 
 		console.log("success got data", response);
@@ -21,7 +21,6 @@ function getGifs(){
 	});
 
 }
-
 
 // Random Button
 
@@ -42,8 +41,10 @@ function getRandomGifs(){
 // Reset Button
 
 function resetGifs(){
+
 	$('.inner').empty();
 	$('#searchtext').empty();
+
 }
 
 // Enter - keyboard
@@ -58,7 +59,6 @@ $(document).on('keydown keyup', function(e) {
     console.log(e.keyCode);
 
 });
-
 
 
 
